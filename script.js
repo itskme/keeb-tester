@@ -8,17 +8,17 @@ document.addEventListener('keydown', (e) => {
         keyElement.classList.add('active');
     }
 
-    if (key === 'Shift') {
+    if (key === 'shift') {
         const shiftKeys = Array.from(keys).filter((k) => k.getAttribute('data-key') === 'ShiftLeft' || k.getAttribute('data-key') === 'ShiftRight');
         shiftKeys.forEach((shiftKey) => shiftKey.classList.add('active'));
     }
 
-    if (key === 'Alt') {
+    if (key === 'alt') {
         const altKeys = Array.from(keys).filter((k) => k.getAttribute('data-key') === 'AltLeft' || k.getAttribute('data-key') === 'AltRight');
         altKeys.forEach((altKey) => altKey.classList.add('active'));
     }
 
-    if (key === 'Control') {
+    if (key === 'control') {
         const ctrlKeys = Array.from(keys).filter((k) => k.getAttribute('data-key') === 'CtrlLeft' || k.getAttribute('data-key') === 'CtrlRight');
         ctrlKeys.forEach((ctrlKey) => ctrlKey.classList.add('active'));
     }
@@ -42,19 +42,19 @@ document.addEventListener('keyup', (e) => {
     }
 
 
-    if (key === 'Shift') {
+    if (key === 'shift') {
         const shiftKeys = Array.from(keys).filter((k) => k.getAttribute('data-key') === 'ShiftLeft' || k.getAttribute('data-key') === 'ShiftRight');
         shiftKeys.forEach((shiftKey) => shiftKey.classList.remove('active'));
     }
 
     
-    if (key === 'Alt') {
+    if (key === 'alt') {
         const altKeys = Array.from(keys).filter((k) => k.getAttribute('data-key') === 'AltLeft' || k.getAttribute('data-key') === 'AltRight');
         altKeys.forEach((altKey) => altKey.classList.remove('active'));
     }
 
    
-    if (key === 'Control') {
+    if (key === 'control') {
         const ctrlKeys = Array.from(keys).filter((k) => k.getAttribute('data-key') === 'CtrlLeft' || k.getAttribute('data-key') === 'CtrlRight');
         ctrlKeys.forEach((ctrlKey) => ctrlKey.classList.remove('active'));
     }
