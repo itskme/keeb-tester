@@ -54,7 +54,7 @@ document.addEventListener('keyup', (e) => {
     }
 
    
-    if (key === 'control') {
+    if (key === 'Control') {
         const ctrlKeys = Array.from(keys).filter((k) => k.getAttribute('data-key') === 'CtrlLeft' || k.getAttribute('data-key') === 'CtrlRight');
         ctrlKeys.forEach((ctrlKey) => ctrlKey.classList.remove('active'));
     }
